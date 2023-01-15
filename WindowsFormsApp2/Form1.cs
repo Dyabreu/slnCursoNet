@@ -63,5 +63,53 @@ namespace WindowsFormsApp2
                 ".\nContacto: " + empresa.Contacto + ".\nEmail: " + empresa.Email + ".\nTelefono: " + empresa.Telefono +
                 ".\nDireccion: " + empresa.Direccion + ".");
         }
+
+        private void btn_factura_Click(object sender, EventArgs e)
+        {
+            Factura factura = new Factura();
+            factura.Numero = "22";
+            factura.Fecha = DateTime.Now;
+            factura.Cliente = "José Pérez";
+            factura.Direccion = "Almagro";
+            factura.CondicionIva = "Responsable inscripto";
+            factura.CondicionVenta = "Cobranzzas";
+            factura.Detalle = "Detalle de venta";
+            factura.Total = 4000;
+            factura.Tipo = "B";
+            MessageBox.Show("Número: " + factura.Numero + ".\nTipo: " + factura.Tipo + ".\nFecha: " + factura.Fecha.ToString() + ".\nCliente: " + factura.Cliente + ".\nDireccion: " + factura.Direccion +
+            ".\nCondición Iva: " + factura.CondicionIva + ".\nCondición Venta: " + factura.CondicionVenta + ".\nDetalle: " + factura.Detalle + ".\n Total: " + factura.Total.ToString()); 
+        }
+
+        private void btn_remito_Click(object sender, EventArgs e)
+        {
+            Remito remito = new Remito();
+            remito.Numero = "50";
+            remito.Fecha = DateTime.Now;
+            remito.Cliente = "María Pérez";
+            remito.Direccion = "Corrientes 2022";
+            remito.CondicionIva = "Responsable inscripto";
+            remito.CondicionVenta = "Cobranzzas";
+            remito.Detalle = "Texto detalle de venta";
+            remito.Total = 9000;
+            remito.FechaEntrega = DateTime.Now.AddDays(1);
+            MessageBox.Show("Número: " + remito.Numero + ".\nFechaEntrega: " + remito.FechaEntrega + ".\nFecha: " + remito.Fecha.ToString() + ".\nCliente: " + remito.Cliente + ".\nDireccion: " + remito.Direccion +
+            ".\nCondición Iva: " + remito.CondicionIva + ".\nCondición Venta: " + remito.CondicionVenta + ".\nDetalle: " + remito.Detalle + ".\n Total: " + remito.Total.ToString());
+
+        }
+
+        private void btn_vendedor_Click(object sender, EventArgs e)
+        {
+           Vendedor vendedor = new Vendedor();
+            vendedor.Nombre = "Horacio";
+            vendedor.Apellido = "Jimenez";
+            vendedor.DNI = "50444033";
+            vendedor.Email = "horaciojimenez@gmail.com";
+            vendedor.Telefono = "+54 1234543";
+            vendedor.Direccion = "Julian Alvarez 3021";
+            MessageBox.Show("Nombre: " + vendedor.Nombre + ".\nApellido: " +vendedor.Apellido +
+                ".\nDNI: " + vendedor.DNI + ".\nEmail: " + vendedor.Email + ".\nTelefono: " + vendedor.Telefono +
+                ".\nDireccion: " + vendedor.Direccion + ".");
+
+        }
     }
 }

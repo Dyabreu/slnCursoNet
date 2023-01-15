@@ -31,9 +31,9 @@
             this.btn_producto = new System.Windows.Forms.Button();
             this.btn_cliente = new System.Windows.Forms.Button();
             this.btn_empresa = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btn_factura = new System.Windows.Forms.Button();
+            this.btn_remito = new System.Windows.Forms.Button();
+            this.btn_vendedor = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_producto
@@ -66,41 +66,44 @@
             this.btn_empresa.UseVisualStyleBackColor = true;
             this.btn_empresa.Click += new System.EventHandler(this.btn_empresa_Click);
             // 
-            // button4
+            // btn_factura
             // 
-            this.button4.Location = new System.Drawing.Point(331, 55);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(216, 76);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Enviar Factura";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_factura.Location = new System.Drawing.Point(331, 55);
+            this.btn_factura.Name = "btn_factura";
+            this.btn_factura.Size = new System.Drawing.Size(216, 76);
+            this.btn_factura.TabIndex = 3;
+            this.btn_factura.Text = "Enviar Factura";
+            this.btn_factura.UseVisualStyleBackColor = true;
+            this.btn_factura.Click += new System.EventHandler(this.btn_factura_Click);
             // 
-            // button5
+            // btn_remito
             // 
-            this.button5.Location = new System.Drawing.Point(331, 171);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(216, 76);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Enviar Remito";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btn_remito.Location = new System.Drawing.Point(331, 171);
+            this.btn_remito.Name = "btn_remito";
+            this.btn_remito.Size = new System.Drawing.Size(216, 76);
+            this.btn_remito.TabIndex = 4;
+            this.btn_remito.Text = "Enviar Remito";
+            this.btn_remito.UseVisualStyleBackColor = true;
+            this.btn_remito.Click += new System.EventHandler(this.btn_remito_Click);
             // 
-            // button6
+            // btn_vendedor
             // 
-            this.button6.Location = new System.Drawing.Point(331, 297);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(216, 76);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Enviar Vendedor";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btn_vendedor.Location = new System.Drawing.Point(331, 297);
+            this.btn_vendedor.Name = "btn_vendedor";
+            this.btn_vendedor.Size = new System.Drawing.Size(216, 76);
+            this.btn_vendedor.TabIndex = 5;
+            this.btn_vendedor.Text = "Enviar Vendedor";
+            this.btn_vendedor.UseVisualStyleBackColor = true;
+            this.btn_vendedor.Click += new System.EventHandler(this.btn_vendedor_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btn_vendedor);
+            this.Controls.Add(this.btn_remito);
+            this.Controls.Add(this.btn_factura);
             this.Controls.Add(this.btn_empresa);
             this.Controls.Add(this.btn_cliente);
             this.Controls.Add(this.btn_producto);
@@ -115,9 +118,9 @@
         private System.Windows.Forms.Button btn_producto;
         private System.Windows.Forms.Button btn_cliente;
         private System.Windows.Forms.Button btn_empresa;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btn_factura;
+        private System.Windows.Forms.Button btn_remito;
+        private System.Windows.Forms.Button btn_vendedor;
     }
 }
 
